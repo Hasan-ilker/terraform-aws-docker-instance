@@ -35,6 +35,7 @@ resource "aws_instance" "tfmyec2" {
   key_name = var.key_name
   vpc_security_group_ids = [aws_security_group.tf-sec-gr.id]
   user_data = templatefile("${abspath(path.module)}/userdata.sh", {myserver = var.server-name})
+
   tags = {
     Name = var.tag
   }
