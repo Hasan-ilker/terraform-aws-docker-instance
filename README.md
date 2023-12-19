@@ -14,6 +14,6 @@ provider "aws" {
 
 module "docker_instance" {
     source = "Hasan-ilker/docker-instance/aws"
-    key_name = "clarusway"
+    key_name = "hasan"
 }
 ```
